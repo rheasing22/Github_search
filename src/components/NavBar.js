@@ -1,16 +1,15 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
+
 class NavBar extends Component {
   static defaultProps = {
     title: "GitHub App",
     icon: "fab fa-github",
   };
-
-  static propTypes{
-      title:PropTypes.string.isRequired;
-      icon: PropTypes.string.isRequired;
-
-  }
+  static propTypes = {
+    title: PropTypes.string.isRequired,
+    icon: PropTypes.string.isRequired,
+  };
   render() {
     console.log(this.props);
     return (
